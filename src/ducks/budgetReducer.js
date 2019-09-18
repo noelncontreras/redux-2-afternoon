@@ -50,6 +50,7 @@ export default function budgetReducer(state=initialState, action) {
                 loading: true
             }
         case `${REQUEST_BUDGET_DATA}_FULFILLED`:
+            // console.log(action.payload)
             return {
                 ...state,
                 ...action.payload,
